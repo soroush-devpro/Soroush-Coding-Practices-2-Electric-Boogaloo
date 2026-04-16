@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Day 15 &mdash; Column Span and Row Span in Tables!</title>
+    </head>
+    <body>
+        <p>Hello everyone, and welcome to Day 15 of these coding practices! Today, we'll be doing tables with column span and row span! (And using the scope attribute on the &lt;th&gt; element!)</p>
+        <hr />
+        <h3>Spanning Columns:</h3>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">6pm</th>
+                <th scope="col">7pm</th>
+                <th scope="col">8pm</th>
+            </tr>
+            <tr>
+                <th scope="row">ABC</th>
+                <td colspan="2">Nightly News</td>
+                <td>Jimmy Kimmel Live!</td>
+            </tr>
+            <tr>
+                <th scope="row">NBC</th>
+                <td>Nightly News</td>
+                <td colspan="2">Jeopardy!</td>
+            </tr>
+            <tr>
+                <th scope="row">CBS</th>
+                <td colspan="2">Nightly News</td>
+                <td>The Price Is Right</td>
+            </tr>
+        </table>
+        <hr />
+        <h3>Spanning Rows:</h3>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">ABC</th>
+                <th scope="col">NBC</th>
+                <th scope="col">CBS</th>
+            </tr>
+            <tr>
+                <th scope="row">6pm</th>
+                <td rowspan="2">Nightly News</td>
+                <td>Nightly News</td>
+                <td rowspan="2">Nightly News</td>
+            </tr>
+            <tr>
+                <th scope="row">7pm</th>
+                <td rowspan="2">Jeopardy!</td>
+            </tr>
+            <tr>
+                <th scope="row">8pm</th>
+                <td>Jimmy Kimmel Live!</td>
+                <td>The Price Is Right</td>
+            </tr>
+        </table>
+        <hr />
+        <p>That's all for today! Thank you all so much for joining me on Day 15 of this coding extravaganza. If you're viewing the completed webpage of this, you may not be able to see the scope attribute in action &mdash; feel free to right-click and view the source code of this webpage to see all the fun action under the hood! I'll see you all tomorrow. Goodbye!</p>
+    </body>
+</html>
