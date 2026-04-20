@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Day 19 &mdash; Review, Dropdown List Boxes, and Multiple Select Boxes</title>
+    </head>
+    <body>
+        <p>Hello everyone, and welcome to Day 19 of these coding practices! Today, we'll be reviewing everything we've done over the past two days (Text Input, Passwords, and Text Area on Day 17; Radio Buttons and Checkboxes on Day 18) and covering two new things: Dropdown List Boxes and Multiple Select Boxes! (p.s. I tried to make it so that entering something into the username/password fields and comments box would take you to the rickroll link, but it just sends you to the YouTube homepage. At least I tried!)</p>
+        <hr />
+        <p>Day 17 Review: Username and Password Boxes!</p>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="get">
+            <p>Username:
+                <input type="text" name="username" maxlength="30" />
+            </p>
+        </form>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="post">
+            <p>Password:
+                <input type="password" name="password" maxlength="30" />
+            </p>
+        </form>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="post">
+            <p>What are your thoughts on Sweden?</p>
+            <textarea name="thoughts-on-sweden">Enter your comments...</textarea>
+        </form>
+        <hr />
+        <p>Day 18 Review: Radio Buttons and Checkboxes</p>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="get">
+            <p>Out of these four services, which one do you prefer?
+                <br />
+                <input type="radio" name="favorite-music-service" value="apple-music" /> Apple Music
+                <input type="radio" name="favorite-music-service" value="spotify" /> Spotify
+                <input type="radio" name="favorite-music-service" value="youtube-music" /> YouTube Music
+                <input type="radio" name="favorite-music-service" value="amazon-music" /> Amazon Music
+                <input type="radio" name="favorite-music-service" value="undecided-or-unsure" /> Undecided/Unsure
+            </p>
+        </form>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="get">
+            <p>Please select your favorite fruit(s):
+                <br />
+                <input type="checkbox" name="favorite-fruit" value="apples" /> Apples
+                <input type="checkbox" name="favorite-fruit" value="oranges" /> Oranges
+                <input type="checkbox" name="favorite-fruit" value="bananas" /> Bananas
+                <input type="checkbox" name="favorite-fruit" value="watermelons" /> Watermelons
+                <input type="checkbox" name="favorite-fruit" value="grapes" /> Grapes
+                <input type="checkbox" name="favorite-fruit" value="mangoes" /> Mangoes
+                <input type="checkbox" name="favorite-fruit" value="strawberries" /> Strawberries
+                <input type="checkbox" name="favorite-fruit" value="pineapples" /> Pineapples
+                <input type="checkbox" name="favorite-fruit" value="blueberries" /> Blueberries
+                <input type="checkbox" name="favorite-fruit" value="lemons" /> Lemons
+                <input type="checkbox" name="favorite-fruit" value="limes" /> Limes
+            </p>
+        </form>
+        <hr />
+        <p>Now that we've refreshed on the past two days, let's get started on today's new concepts: Dropdown List Boxes and Multiple Select Boxes!</p>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="get">
+            <p>What computer operating system do you use?</p>
+            <select name="desktop-operating-system">
+                <option value="windows">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="chromeos">ChromeOS</option>
+                <option value="other-or-neither">Other/None of These</option>
+            </select>
+        </form>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="post">
+            <p>Do you play any of the following instruments? (You can select more than one option by holding down Control on a Windows device and Command on a Mac while selecting different options.)</p>
+            <select name="instruments" multiple="multiple">
+                <option value="flute">Flute</option>
+                <option value="clarinet">Clarinet</option>
+                <option value="trumpet">Trumpet</option>
+                <option value="trombone">Trombone</option>
+            </select>
+        </form>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="get">
+            <input type="checkbox" name="instruments" value="i-dont-play-any-of-those-instruments" /> I don't play any of those instruments!
+        </form>
+        <hr />
+        <p>Anyways, that's all for today. Thank you all so much for joining me on Day 19 of this coding extravaganza! I'll see you all soon. Goodbye!</p>
+    </body>
+</html>
