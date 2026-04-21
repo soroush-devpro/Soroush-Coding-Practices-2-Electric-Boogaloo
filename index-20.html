@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Day 20 &mdash; Review, File Input Boxes, and Submit Buttons</title>
+    </head>
+    <body>
+        <p>Hello everyone, and welcome to Day 20 of these coding practices! I can't believe we've already been doing this for 20 days straight, and are closing in on 3 weeks. Today, we'll be reviewing everything we've been doing over the past three days (Text Input, Passwords, and Text Area on Day 17; Radio Buttons and Checkboxes on Day 18; Dropdown List Boxes and Multiple Select Boxes on Day 19), and we'll touch on two new things: File Input Boxes and Submit Buttons!</p>
+        <hr />
+        <p>Day 17 Review: Username and Password Boxes!</p>
+        <form action="https://www.example.com/login.php" method="get">
+            <p>Username:
+                <input type="text" name="username" maxlength="30" />
+            </p>
+        </form>
+        <form action="https://www.example.com/login.php" method="post">
+            <p>Password:
+                <input type="password" name="password" maxlength="30" />
+            </p>
+        </form>
+        <hr />
+        <p>Day 18 Review: Radio Buttons and Checkboxes!</p>
+        <form action="https://www.example.com/area-preference.php" method="get">
+            <p>Do you prefer:
+                <br />
+                <input type="radio" name="area-preference" value="bustling-city" /> Bustling City
+                <input type="radio" name="area-preference" value="regular-suburbs" /> Regular Suburbs
+                <input type="radio" name="area-preference" value="quiet-countryside" /> Quiet Countryside
+                <input type="radio" name="area-preference" value="none-of-these" /> None of These
+            </p>
+        </form>
+        <form action="https://www.example.com/continents.php" method="get">
+            <p>Please select the continent(s) you have been to below:
+                <br />
+                <input type="checkbox" name="continents" value="north-america" /> North America
+                <input type="checkbox" name="continents" value="south-america" /> South America
+                <input type="checkbox" name="continents" value="europe" /> Europe
+                <input type="checkbox" name="continents" value="africa" /> Africa
+                <input type="checkbox" name="continents" value="asia" /> Asia
+                <input type="checkbox" name="continents" value="australia-and-oceania" /> Australia & Oceania
+                <input type="checkbox" name="continents" value="antarctica" /> Antarctica (wow!) 
+            </p>
+        </form>
+        <hr />
+        <p>Day 19 Review: Dropdown List Boxes and Multiple Select Boxes</p>
+        <form action="https://www.example.com/color-triads.php" method="get">
+            <p>Which color triad do you prefer?
+                <select name="favorite-color-triad">
+                    <option value="red-blue-yellow">Red, Blue, and Yellow</option>
+                    <option value="orange-green-purple">Orange, Green, and Purple</option>
+                    <option value="redorange-yellowgreen-blueviolet">Red-Orange, Yellow-Green, and Blue-Violet</option>
+                    <option value="yelloworange-bluegreen-redviolet">Yellow-Orange, Blue-Green, and Red-Violet</option>
+                    <option value="unsure-undecided-or-none-of-these">Unsure, Undecided, or None of These</option>
+                </select>
+            </p>
+        </form>
+        <form action="https://www.example.com/devices.php" method="get">
+            <p>Do you have any of the following devices? (You can select more than one option by holding down Control on a Windows device and Command on a Mac while selecting different options.)</p>
+            <select name="instruments" multiple="multiple">
+                <option value="phone">Phone</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop</option>
+                <option value="ar-or-vr-device">AR/VR Device</option>
+                <option value="tv">TV</option>
+                <option value="other">Other</option>
+            </select>
+        </form>
+        <form action="https://www.example.com/devices.php">
+            <input type="checkbox" name="instruments" value="i-dont-have-any-of-these-devices" /> I don't have any of these devices
+        </form>
+        <hr />
+        <p>Now, let's get cracking with today's business: File Input Boxes and Submit Buttons! We'll practice both concepts with one thing: an upload file prompt with a file input box and a submit button to "submit" that request to a server &mdash; even though we don't have our own server (yet!)!</p>
+        <form action="https://www.example.com/funniest-cat-pictures.php" method="post">
+            <p>Upload your funniest cat picture below! (If you don't have one, feel free to Google one!)</p>
+            <input type="file" name="funniest-cat-pictures" /><br />
+            <input type="submit" value="Upload" />
+        </form>
+        <hr />
+        <p>Anyways, folks, that's all for today. Thank you all for joining me on Day 20 of this coding extravaganza! I'll see you all soon. Goodbye!</p>
+    </body>
+</html>
