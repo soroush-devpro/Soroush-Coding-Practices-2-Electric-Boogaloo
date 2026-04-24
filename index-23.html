@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Day 23 &mdash; Form Validation and Date Inputs</title>
+    </head>
+    <body>
+        <p>Hello everyone, and welcome to Day 23 of these coding practices! Today, we'll be doing form validation and something that I've been super excited to do since we started learning forms: Date Inputs! :D</p>
+        <hr />
+        <form action="https://www.example.com/login.php" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username:</label>
+                <input type="text" name="username" maxlength="30" required="required" />
+                <br /><br />
+                <label for="password">Password:</label>
+                <input type="password" name="password" maxlength="30" required="required" />
+                <br /><br />
+                <input type="submit" name="Login" />
+            </fieldset>
+        </form>
+        <hr />
+        <form action="https://www.example.com/birthday.php" method="get">
+            <label for="birthday">What is your birthday?</label>
+            <input type="date" name="birthday" />
+            <input type="submit" value="Submit" />
+        </form>
+        <hr />
+        <p>Anyways, folks, thank you so much for joining me on Day 23 of this coding extravaganza. I was thrilled to get to practice the form validation and the date inputs today! I'll see you all tomorrow! Goodbye!</p>
+    </body>
+</html>
