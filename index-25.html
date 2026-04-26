@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 25 &mdash; Forms Review, DOCTYPES, and Comments!</title>
+    </head>
+    <body>
+    <!-- start of first paragraph -->
+        <p>Hello everyone, and welcome to Day 25 of these coding practices! Today, we'll review on forms, and we'll dive into DOCTYPES and comments! I have also learned the id and class attributes, as well as the &lt;div&gt; and &lt;span&gt; elements, however, due to them only really being useful in CSS, I have decided to omit them from our practices today, as I will use those elements and attributes when we dive into CSS in May. Anyhow, let's jump right into it!</p>
+    <!-- end of first paragraph -->
+    <hr />
+    <!-- start of forms section -->
+        <form action="https://www.example.com/form.php" method="post">
+            <fieldset>
+                <legend>Please fill in your login details:</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" maxlength="30" required="required"/>
+                <br />
+                <label for="email-address">Email Address:</label>
+                <input type="email" id="email-address" name="email-address" required="required" />
+                <br />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" maxlength="30" required="required"/>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Some random questions:</legend>
+                <p>What are your thoughts on cookies and cream ice cream?</p>
+                <textarea name="thoughts-on-cookies-and-cream-ice-cream" placeholder="Enter your comments..."></textarea>
+                <br />
+                <p>Which do you prefer?</p>
+                <input type="radio" id="cake" name="sweets-preference" value="cake" />
+                <label for="cake">Cake</label>
+                <input type="radio" id="cookies" name="sweets-preference" value="cookies" />
+                <label for="cookies">Cookies</label>
+                <br />
+                <p>Which colors (out of the 6 options below) do you like the most?</p>
+                <input type="checkbox" id="red" name="color-preference" value="red" />
+                <label for="red">Red</label>
+                <input type="checkbox" id="orange" name="color-preference" value="orange" />
+                <label for="orange">Orange</label>
+                <input type="checkbox" id="yellow" name="color-preference" value="yellow" />
+                <label for="yellow">Yellow</label>
+                <input type="checkbox" id="green" name="color-preference" value="green" />
+                <label for="green">Green</label>
+                <input type="checkbox" id="blue" name="color-preference" value="blue" />
+                <label for="blue">Blue</label>
+                <input type="checkbox" id="purple" name="color-preference" value="purple" />
+                <label for="purple">Purple</label>
+                <br />
+                <p>What device(s) do you use the most?</p>
+                <select name="most-used-device">
+                    <option value="phone">Phone</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="computer">Computer</option>
+                    <option value="tv-console-streaming-device">TV / Console / Streaming Device</option>
+                    <option value="other-none-of-these-i-dont-use-devices">Other / None of These / I don't use devices</option>
+                </select>
+                <br />
+                <p>Do you go to any of these coffee shops? (You can select more than one option by holding down Control on a Windows device and Command on a Mac while selecting different options.)</p>
+                <select name="coffee-shops" multiple="multiple">
+                    <option value="starbucks">Starbucks</option>
+                    <option value="tim-hortons">Tim Hortons</option>
+                    <option value="costa-coffee">Costa Coffee</option>
+                </select>
+                <br />
+                <br />
+                    <input type="checkbox" id="i-dont-go-to-any-of-these-or-any-coffee-shops-at-all" name="coffee-shops" value="i-dont-go-to-any-of-these-or-any-coffee-shops-at-all" />
+                    <label for="i-dont-go-to-any-of-these-or-any-at-all">I don't go to any of these (or any coffee shops at all)</label>
+                <br />
+                <p>Upload your funniest dog picture below! (If you don't have one, feel free to Google one!)</p>
+                <input type="file" name="funniest-dog-pictures" />
+                <br />
+                <p>Below, feel free to enter any date &mdash; a date that looks aesthetically pleasing to you, a date that has significance to you, or anything else!</p>
+                    <input type="date" name="pleasing-significant-or-anything-else-date-input" />
+                <br />
+                <p>Feel free to enter any random URL below:</p>
+                    <input type="url" name="random-url" />
+                <br />
+                <p>Below you will find a search bar. Feel free to type the name of any animal below:</p>
+                    <input type="search" name="search" />
+                <br />
+                <input type="hidden" name="form-position" value="end" />
+                <br />
+                <input type="submit" value="Submit form" />
+            </fieldset>
+        </form>
+        <hr />
+        <form action="https://www.example.com/buttons.php" method="get">
+            <p>Image Buttons and Regular Buttons:</p>
+            <input type="image" src="seattle-central-library.jpg" A button that says &quot;Testing&quot;, with the Space Needle overlayed in the background" width="68" height="46" />
+            <br />
+            <button><img src="space-needle.jpg" alt="A picture of the Space Needle in Seattle, Washington, United States" width="17" height="12" /> Testing</button>
+        </form>
+    <!-- end of forms section -->
+    <hr />
+    <!-- start of final paragraph -->
+        <p>Anyways, that's it for today. Thank you all so much for joining me on Day 25 of this coding extravaganza, which was certainly the biggest one yet! I'll see you all soon. Goodbye!</p>
+    <!-- end of final paragraph -->
+    </body>
+</html>
